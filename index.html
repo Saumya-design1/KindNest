@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!--
+        The head section contains browser metadata and external asset references.
+        This ensures the page uses UTF-8 character encoding, adapts to mobile devices,
+        and loads the website's stylesheet for the visual design.
+    -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KindNest | Together We Can</title>
@@ -8,15 +13,41 @@
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!--
+        The main structure of the page is a single-page NGO landing page.
+        Each section is designed to guide visitors through the mission, impact,
+        causes, and volunteer opportunities in a clear storytelling flow.
+        The comments below help organize the layout for future maintenance.
+    -->
+
+    <!--
+        Header and primary navigation:
+        - This area contains the brand identity and top navigation links.
+        - The navigation supports the site's single-page experience by linking to
+          internal anchors such as #home, #about, #causes, and #volunteer.
+        - The mobile menu button is included for responsive layouts and is handled
+          by JavaScript on smaller screens.
+    -->
     <header>
         <nav class="navbar">
+            <!--
+                Brand/logo link anchors the visitor back to the top of the homepage.
+                The heart symbol gives the brand a warm, caring emotional tone.
+            -->
             <a href="#home" class="logo">♡ KindNest</a>
 
+            <!--
+                The menu button appears on smaller screens to toggle the navigation menu.
+                It is hidden or styled differently on larger screens via CSS.
+            -->
             <button class="menu-btn" id="menuBtn" aria-label="Toggle navigation">
                 ☰
             </button>
 
+            <!--
+                The nav list contains the primary destinations users may want to explore.
+                They are kept intentionally simple and accessible for quick browsing.
+            -->
             <ul class="nav-links" id="navLinks">
                 <li>Home</li>
                 <li>About</li>
@@ -26,30 +57,61 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
+    <!--
+        Hero section:
+        This is the first impression of the organization and one of the most important
+        conversion points on the page. It combines emotion, purpose, and a clear action.
+        The headline communicates solidarity and action, while the button prompts visitors
+        to take the next step by becoming a volunteer.
+    -->
     <section class="hero" id="home">
         <div class="hero-content">
+            <!--
+                Eyebrow heading is a short label used above the main hero headline.
+                It visually reinforces the nonprofit mission and sets the emotional tone.
+            -->
             <span class="eyebrow">♡ EVERY ACT OF KINDNESS MATTERS</span>
 
+            <!--
+                The main headline explicitly communicates a values-based message:
+                people are stronger when they work together.
+            -->
             <h1>Together, we can<br>
                 <span>make a difference.</span>
             </h1>
 
+            <!--
+                Supporting paragraph explains the mission in a warm, inclusive way.
+                It invites community participation and frames each action as meaningful.
+            -->
             <p>
                 Every small act of kindness creates a ripple of hope.
                 Join us in building a world where everyone has the
                 opportunity to thrive.
             </p>
 
+            <!--
+                The call-to-action button is intentionally emphasized to move visitors toward
+                engagement. The anchor connects to the volunteer form lower on the page.
+            -->
             <div class="hero-buttons">
                 <a href="#volunteer" class="btn btn-secondary">Become a Volunteer</a>
             </div>
 
+            <!--
+                Trust note adds a soft, reassuring message that reinforces the website's
+                values and builds emotional trust with the visitor.
+            -->
             <div class="trust-note">
                 <span>♡</span> Every contribution brings us closer to a better tomorrow.
             </div>
         </div>
 
+        <!--
+            Hero image block adds visual storytelling and helps connect the text to real-world
+            action. The image is a community-based photo that communicates hope, teamwork,
+            and shared support.
+        -->
         <div class="hero-image">
             <img
                 src="https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1000&q=85"
@@ -64,7 +126,12 @@
         </div>
     </section>
 
-    <!-- Impact Section -->
+    <!--
+        Impact section:
+        This block is designed to establish credibility by showcasing measurable support,
+        volunteer involvement, and community outreach. These figures are intentionally simple
+        and illustrative for a project demo, which is noted below.
+    -->
     <section class="impact" id="about">
         <div class="section-heading">
             <span class="eyebrow">OUR GROWING IMPACT</span>
@@ -72,6 +139,10 @@
             <p>Working together to make our communities stronger.</p>
         </div>
 
+        <!--
+            Stats grid presents a quick overview of the nonprofit's reach.
+            These cards visually summarize outputs in a format that is easy to scan.
+        -->
         <div class="stats-grid">
             <div class="stat-card">
                 <div class="stat-icon">♡</div>
@@ -98,12 +169,21 @@
             </div>
         </div>
 
+        <!--
+            This note clarifies that the numbers are mock figures for demonstration purposes.
+            It keeps the project honest and prevents viewers from mistaking demo data for live data.
+        -->
         <p class="demo-note">
             Note: These are illustrative figures for the project demo.
         </p>
     </section>
 
-    <!-- Causes Section -->
+    <!--
+        Causes section:
+        This section helps users understand the organization's focus areas.
+        Each cause card highlights a type of support, with an image, a descriptive title,
+        and a short explanation that is easy to connect with emotionally.
+    -->
     <section class="causes section-padding" id="causes">
         <div class="section-heading">
             <span class="eyebrow">WHAT WE CARE ABOUT</span>
@@ -111,6 +191,11 @@
             <p>Choose a cause close to your heart and help us create change.</p>
         </div>
 
+        <!--
+            Cause cards are organized in a responsive grid so that multiple areas of support
+            can be displayed without overwhelming the page. Each block acts like a mini-story:
+            visual, problem, message, and call to action.
+        -->
         <div class="causes-grid">
 
             <article class="cause-card">
@@ -164,7 +249,11 @@
         </div>
     </section>
 
-    <!-- Call to Action -->
+    <!--
+        Call-to-action banner:
+        This section acts as a motivational bridge between awareness and action.
+        It emphasizes simplicity: even a small amount of time can make a meaningful impact.
+    -->
     <section class="cta">
         <div>
             <span class="eyebrow">YOUR TIME CAN CHANGE LIVES</span>
@@ -175,8 +264,12 @@
         <a href="#volunteer" class="btn btn-light">Volunteer With Us →</a>
     </section>
 
-
-    <!-- Volunteer Section -->
+    <!--
+        Volunteer section:
+        This is the primary conversion form where interested users can express interest.
+        The structure is intentionally clear and easy to complete, with focused fields for
+        identity, contact information, cause selection, and motivation.
+    -->
     <section class="volunteer-section section-padding" id="volunteer">
         <div class="section-heading">
             <span class="eyebrow">BECOME A CHANGE-MAKER</span>
@@ -184,21 +277,37 @@
             <p>Your skills, time and compassion can make a real difference.</p>
         </div>
 
+        <!--
+            Volunteer form card gives the call-to-action a dedicated visual container.
+            It isolates the form from the surrounding content and makes it easier to complete.
+        -->
         <div class="volunteer-card">
             <form id="volunteerForm" class="volunteer-form">
 
+                <!--
+                    Full name is required so the organization can identify the applicant and
+                    personalize follow-up communication.
+                -->
                 <div class="input-group">
                     <label for="volName">Full name</label>
                     <input type="text" id="volName"
                         placeholder="Enter your full name" required>
                 </div>
 
+                <!--
+                    Email address allows the organization to contact the volunteer about opportunities.
+                    The input type uses built-in browser validation for email format checking.
+                -->
                 <div class="input-group">
                     <label for="volEmail">Email address</label>
                     <input type="email" id="volEmail"
                         placeholder="Enter your email" required>
                 </div>
 
+                <!--
+                    Phone number is included to support quick outreach and confirm volunteer details.
+                    The title attribute provides a hint about the expected format.
+                -->
                 <div class="input-group">
                     <label for="volPhone">Phone number</label>
                     <input type="tel" id="volPhone"
@@ -206,6 +315,10 @@
                         title="Enter a 10-digit phone number" required>
                 </div>
 
+                <!--
+                    The area of interest field helps the organization match volunteers with the most
+                    relevant programs based on their skills or preferred cause.
+                -->
                 <div class="input-group">
                     <label for="volArea">Area of interest</label>
                     <select id="volArea" required>
@@ -217,22 +330,38 @@
                     </select>
                 </div>
 
+                <!--
+                    This optional but recommended field captures the volunteer's motivation,
+                    which can help the team understand intent and fit for each initiative.
+                -->
                 <div class="input-group full-width">
                     <label for="volMessage">Why would you like to volunteer?</label>
                     <textarea id="volMessage" rows="3"
                         placeholder="Tell us a little about your motivation..."></textarea>
                 </div>
 
+                <!--
+                    The submit button is styled to stand out and clearly communicate the action.
+                    It triggers client-side form handling via the site's JavaScript file.
+                -->
                 <button type="submit" class="btn btn-primary full-btn full-width">
                     Submit Volunteer Application →
                 </button>
             </form>
 
+            <!--
+                Result area is used to display messages after the form is submitted.
+                It is referenced by JavaScript for success or validation feedback.
+            -->
             <div id="volunteerResult" class="result" aria-live="polite"></div>
         </div>
     </section>
 
-    <!-- Footer -->
+    <!--
+        Footer section:
+        The footer reiterates the nonprofit's mission and provides quick navigation links.
+        It acts as a final anchor point for users who want to continue exploring the site.
+    -->
     <footer>
         <div class="footer-content">
             <a href="#home" class="logo">♡ KindNest</a>
@@ -249,6 +378,12 @@
         </p>
     </footer>
 
+    <!--
+        JavaScript inclusion:
+        The script file contains interactive behavior such as mobile menu toggling,
+        smooth page interactions, and volunteer form handling.
+        Keeping the script at the end of the body helps ensure the DOM is loaded before it runs.
+    -->
     <script src="script.js"></script>
 </body>
 </html>
